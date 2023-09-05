@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <p>Carros em estoque</p>
+    <button id="btn_incluirCarro" class="btn_modal">Incluir carro</button>
+</header>
+<body>
+    <main>
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>Insira os dados do novo veículo</h2>
+                <button id="close-modal" class="btn_modal">fechar</button>
+            </div>
+            <div class="modal-body">
+                <label for="marca">Digite a montadora do veículo</label>
+                <input type="text" id="montadora">
+                
+                <label for="modelo">Digite a modelo do veículo</label>
+                <input type="text" id="modelo">
+                
+                <label for="ano">Digite o ano do veículo</label>
+                <input type="text" id="ano">
+                
+                <label for="valor">Digite valor do veículo</label>
+                <input type="text" id="valor">
+
+                <button id="salvarVeiculo" class="btn_modal">Salvar</button>
+                
+            </div>
+        </div>
+        <input type="text" id="cad">
+       <table id="carros">
+            <thead>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Valor</th>
+            </thead>
+       </table>
+    </main>
+<script src="estoque.js"></script>
+</body>
+</html>
